@@ -1,7 +1,6 @@
 import discord
 import os
 from discord.ext import commands
-bot = commands.Bot(command_prefix='$')
 
 client = discord.Client()
 
@@ -17,8 +16,15 @@ async def on_ready():
 #     if message.content.startswith('$hello'):
 #         await message.channel.send('Hello!')
 
+bot = commands.Bot(command_prefix='$')
+
 @bot.command()
-async def hello(ctx, *, foo):
+async def empty(ctx):
+    await ctx.send("empty")
+
+@bot.command()
+async def hello(ctx, foo):
     await ctx.send("Hello "+ctx.author)
+
 
 client.run(os.environ['BOT_TOKEN'])
