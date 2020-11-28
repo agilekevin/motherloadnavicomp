@@ -18,7 +18,7 @@ async def on_ready():
 #         await message.channel.send('Hello!')
 
 @bot.command
-async def hello(ctx):
+async def hello(ctx, *, foo):
     await ctx.send("Hello "+ctx.author)
 
 client.run(os.environ['BOT_TOKEN'])
