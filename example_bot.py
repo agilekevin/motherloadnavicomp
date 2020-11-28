@@ -17,7 +17,7 @@ async def on_ready():
 #     if message.content.startswith('$hello'):
 #         await message.channel.send('Hello!')
 
-@bot.command
+@bot.command()
 async def hello(ctx, *, foo):
     await ctx.send("Hello "+ctx.author)
 
