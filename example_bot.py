@@ -1,7 +1,7 @@
 import discord
 import os
 from discord.ext import commands
-from discord.ext.commands import bot
+bot = commands.Bot(command_prefix='$')
 
 client = discord.Client()
 
