@@ -27,7 +27,7 @@ async def hungry(ctx):
 
 
 # plot from X to Y
-plotRegex = re.compile("^from (\\d) ?, ?(\\d) ?to ?(\\d) ?, ?(\\d)$")
+plotRegex = re.compile(r'^from (\d*) ?, ?(\d*) ?to ?(\d*) ?, ?(\d*)')
 
 
 @bot.command()
