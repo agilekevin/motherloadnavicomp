@@ -17,7 +17,7 @@ async def empty(ctx):
 
 @bot.command()
 async def hello(ctx, foo):
-    await ctx.send("Hello "+ctx.author)
+    await ctx.send("Hello "+foo)
 
 
 @bot.command()
