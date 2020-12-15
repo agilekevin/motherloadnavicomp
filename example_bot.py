@@ -22,8 +22,8 @@ async def hello(ctx, foo):
 
 
 @bot.command()
-async def hungry(ctx):
-    await ctx.send("cupcake")
+async def hungry(ctx, *, args):
+    await ctx.send(args)
 
 
 # plot from X to Y
